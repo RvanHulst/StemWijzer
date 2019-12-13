@@ -1,7 +1,67 @@
 body {
   background-image: url("img/background.jpeg");
-  background-size: 106%;
+  background-size: 115%;
   font-family: 'Arial';
   font-size: 22px;
+  box-shadow: 0;
 
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: left;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left left left left left left'
+    'main main main right right right'
+    'menu menu menu right right right'
+    'footer footer footer footer footer footer';
+  background-color: white;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: left;
+  font-size: 30px;
+}
+.block{
+background-color: white;
+height: 1200px;
+width: 80%;
+margin-left: 10%;
+}
+.Begin{
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	width: 180px;
+	height: 70px;
+	border-radius: 10px;
+	margin-left: 700px;
+
+}
+
+.item1{
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.item2{
+	margin-left: 60px;
+}
+.item3{
+	margin-left: 60px;
+}	
+.item4{
+	margin-left: 60px;
+}
+.item5{
+	margin-left: 60px;
+}
+.item6{
+	margin-left: 60px;
 }
